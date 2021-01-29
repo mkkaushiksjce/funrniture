@@ -17,15 +17,7 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <ImageGallery
-          items={images}
-          showBullets={false}
-          slideOnThumbnailHover={true}
-        />
-      </div>
-    );
+    return <div>Hello</div>;
   }
 }
 
