@@ -142,26 +142,31 @@ class App extends Component {
             mouseTracking
             items={normal_sofas}
             responsive={responsive}
+            infinite={true}
           />
           <AliceCarousel
             mouseTracking
             items={double_sofas}
             responsive={responsive}
+            infinite={true}
           />
           <AliceCarousel
             mouseTracking
             items={triple_sofas}
             responsive={responsive}
+            infinite={true}
           />
           <AliceCarousel
             mouseTracking
             items={sectional_sofas}
             responsive={responsive}
+            infinite={true}
           />
           <AliceCarousel
             mouseTracking
             items={pouf_sofas}
             responsive={responsive}
+            infinite={true}
           />
         </div>
       </div>
