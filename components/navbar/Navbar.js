@@ -12,7 +12,7 @@ class Navbar extends React.Component {
       <nav className="navbar-wrap">
         <div className="viewport">
           <div id="logo" href="/">
-            Covid Dashboard
+            Shyam Furniture Store
           </div>
         </div>
       </nav>

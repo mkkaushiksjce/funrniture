@@ -137,31 +137,33 @@ class App extends Component {
     return (
       <div>
         <Navbar />
-        <AliceCarousel
-          mouseTracking
-          items={normal_sofas}
-          responsive={responsive}
-        />
-        <AliceCarousel
-          mouseTracking
-          items={double_sofas}
-          responsive={responsive}
-        />
-        <AliceCarousel
-          mouseTracking
-          items={triple_sofas}
-          responsive={responsive}
-        />
-        <AliceCarousel
-          mouseTracking
-          items={sectional_sofas}
-          responsive={responsive}
-        />
-        <AliceCarousel
-          mouseTracking
-          items={pouf_sofas}
-          responsive={responsive}
-        />
+        <div className="viewport">
+          <AliceCarousel
+            mouseTracking
+            items={normal_sofas}
+            responsive={responsive}
+          />
+          <AliceCarousel
+            mouseTracking
+            items={double_sofas}
+            responsive={responsive}
+          />
+          <AliceCarousel
+            mouseTracking
+            items={triple_sofas}
+            responsive={responsive}
+          />
+          <AliceCarousel
+            mouseTracking
+            items={sectional_sofas}
+            responsive={responsive}
+          />
+          <AliceCarousel
+            mouseTracking
+            items={pouf_sofas}
+            responsive={responsive}
+          />
+        </div>
       </div>
     );
   }
