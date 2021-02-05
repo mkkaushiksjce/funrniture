@@ -14,7 +14,9 @@ class Navbar extends React.Component {
           <div className="f-l" id="logo" href="/">
             Shyam Furniture Store
           </div>
-          <div className="f-r">+91-9901573751</div>
+          <div id="shyamNumber" className="f-r">
+            +91-9901573751
+          </div>
         </div>
       </nav>
     );
