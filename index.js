@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 
-import "./style.css";
+import "./style.less";
 
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+
+// Component Imports
+import Navbar from "./components/navbar/Navbar.js";
 
 class App extends Component {
   constructor() {
@@ -19,6 +22,11 @@ class App extends Component {
   };
 
   render() {
+    const responsive = {
+      0: { items: 1 },
+      568: { items: 2 },
+      1024: { items: 2 }
+    };
     const normal_sofas = [
       <img
         src="https://raw.githubusercontent.com/mkkaushiksjce/furniture/master/1.jpg"
@@ -128,11 +136,32 @@ class App extends Component {
 
     return (
       <div>
-        <AliceCarousel mouseTracking items={normal_sofas} />
-        <AliceCarousel mouseTracking items={double_sofas} />
-        <AliceCarousel mouseTracking items={triple_sofas} />
-        <AliceCarousel mouseTracking items={sectional_sofas} />
-        <AliceCarousel mouseTracking items={pouf_sofas} />
+        <Navbar />
+        <AliceCarousel
+          mouseTracking
+          items={normal_sofas}
+          responsive={responsive}
+        />
+        <AliceCarousel
+          mouseTracking
+          items={double_sofas}
+          responsive={responsive}
+        />
+        <AliceCarousel
+          mouseTracking
+          items={triple_sofas}
+          responsive={responsive}
+        />
+        <AliceCarousel
+          mouseTracking
+          items={sectional_sofas}
+          responsive={responsive}
+        />
+        <AliceCarousel
+          mouseTracking
+          items={pouf_sofas}
+          responsive={responsive}
+        />
       </div>
     );
   }
