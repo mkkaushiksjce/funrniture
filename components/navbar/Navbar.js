@@ -10,10 +10,11 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav className="navbar-wrap">
-        <div className="viewport">
-          <div id="logo" href="/">
+        <div className="viewport cf">
+          <div className="f-l" id="logo" href="/">
             Shyam Furniture Store
           </div>
+          <div className="f-r">+91-9901573751</div>
         </div>
       </nav>
     );
