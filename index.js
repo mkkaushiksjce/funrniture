@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-
-import ImageGallery from "react-image-gallery";
-
 import { render } from "react-dom";
-import Hello from "./Hello";
 
-import "react-image-gallery/styles/css/image-gallery.css";
 import "./style.css";
+
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 class App extends Component {
   constructor() {
@@ -16,8 +14,31 @@ class App extends Component {
     };
   }
 
+  handleDragStart = e => {
+    e.preventDefault();
+  };
+
   render() {
-    return <div>Hello</div>;
+    const items = [
+      <img
+        src="https://raw.githubusercontent.com/mkkaushiksjce/furniture/master/1.jpg"
+        onDragStart={this.handleDragStart}
+      />,
+      <img
+        src="https://raw.githubusercontent.com/mkkaushiksjce/furniture/master/1_double.jpg"
+        onDragStart={this.handleDragStart}
+      />,
+      <img
+        src="https://raw.githubusercontent.com/mkkaushiksjce/furniture/master/1_pouf.jpg"
+        onDragStart={this.handleDragStart}
+      />
+    ];
+
+    return (
+      <div>
+        <AliceCarousel mouseTracking items={items} />
+      </div>
+    );
   }
 }
 
