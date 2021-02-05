@@ -1,8 +1,12 @@
-h1, p {
+h1,
+p {
   font-family: Lato;
 }
 
-
 .image-gallery234 {
   width: 600px;
+}
+
+.alice-carousel__wrapper {
+  text-align: center;
 }

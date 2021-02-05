@@ -19,24 +19,32 @@ class App extends Component {
   };
 
   render() {
-    const items = [
+    const normal = [
       <img
         src="https://raw.githubusercontent.com/mkkaushiksjce/furniture/master/1.jpg"
         onDragStart={this.handleDragStart}
       />,
       <img
-        src="https://raw.githubusercontent.com/mkkaushiksjce/furniture/master/1_double.jpg"
+        src="https://raw.githubusercontent.com/mkkaushiksjce/furniture/master/2.jpg"
         onDragStart={this.handleDragStart}
       />,
       <img
-        src="https://raw.githubusercontent.com/mkkaushiksjce/furniture/master/1_pouf.jpg"
+        src="https://raw.githubusercontent.com/mkkaushiksjce/furniture/master/3.jpg"
+        onDragStart={this.handleDragStart}
+      />,
+      <img
+        src="https://raw.githubusercontent.com/mkkaushiksjce/furniture/master/4.jpg"
+        onDragStart={this.handleDragStart}
+      />,
+      <img
+        src="https://raw.githubusercontent.com/mkkaushiksjce/furniture/master/5.jpg"
         onDragStart={this.handleDragStart}
       />
     ];
 
     return (
       <div>
-        <AliceCarousel mouseTracking items={items} />
+        <AliceCarousel mouseTracking items={normal} />
       </div>
     );
   }
